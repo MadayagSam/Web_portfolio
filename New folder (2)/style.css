@@ -20,11 +20,22 @@ nav{
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 200%;
+}
+.box{
+    position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  width: 300px;
+
 }
 
 .navigation-bar{
-    background-color:grey;
+    background-image: url(Assets/grass.jpg);
     padding: 5px;
     margin: 0;
     height: 100px;
@@ -36,7 +47,7 @@ nav{
 }
 
 .logo{
-    height: 90px;
+    height: 80px;
     width: 120px;
     border-radius: 10px;
     position: relative;
@@ -61,22 +72,26 @@ h1, h2, li, h3, p{
 .nav-list{
     overflow: hidden;
 }
+.nav-list a{
+    font-size: 40px;
+}
 
 .nav-list a:hover{
-    color:pink;
-    border-top: 6px solid #f9f6ef;
-    border-bottom: 6px solid #f9f6ef;
+    color:black;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
     animation-delay: 3s;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .nav-list a{
-    color: #000;
+    color: pink;
     text-decoration-line: none;
     padding: 2px;
     border-radius: 4px;
     font-weight: bold;
+    
 }
 
 
@@ -95,6 +110,7 @@ h1, h2, li, h3, p{
     font-size: 50px;
     flex-wrap: wrap;
 }
+
 
 .main-header h2{
     text-align: center;
@@ -119,8 +135,6 @@ h1, h2, li, h3, p{
     margin: auto;
     padding: 20px;
     text-align: center;
-    /* display: flex; 
-    justify-content: center; */
 }
 
 .main-header a{
@@ -129,28 +143,14 @@ h1, h2, li, h3, p{
     margin-left: auto;
     text-align: center;
     text-decoration: none;
-    color: #ffc107;
+    color: black;
 }
 
-.typewriter{
-    position: relative;
-}
 
-.typewriter::after{
-    content: '|';
-    position: absolute;
-    right: 0;
-    color:#ffc107;
-    width: 100%;
-    background-color: #f9f6ef;
-    animation: typing 2.5s steps(30) alternate infinite;
-}
 
-@keyframes typing{
-    to{
-        width: 0;
-    }
-}
+
+
+
 
 /* SECTION 1 (ABOUT) */
 #section-about{
@@ -174,103 +174,11 @@ h1, h2, li, h3, p{
 .about-statement p{
     margin-left: 100px;
     font-size: 45px;
-    color: #f7f6f4;
-    font-style: italic;
+    color: black;
+    font-style: isans-ser;
 }
 
-.vision-statement h3{
-    margin: 15px;
-    color: #ffc107;
-}
 
-.vision-statement p{
-    margin: 15px;
-}
-
-.mission-statement h3{
-    margin: 15px;
-    color: #ffc107;
-}
-
-.mission-statement p{
-    margin: 15px;
-}
-
-.values-statement h3{
-    margin: 15px;
-    color: #ffc107;
-}
-
-.values-statement p{
-    margin: 15px;
-}
-
-/* SECTION 2 (SKILL) */
-#section-skill{
-    height: 100vh;
-    padding-top: 70px;
-}
-
-.skill h2{
-    text-align: center;
-}
-
-.skill-container{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
-}
-
-.skill-set img{
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-.skill-quote1 q{
-    color: #ffc107;
-    font-size: 40px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-.skill-quote1 p{
-    display: flex;
-    justify-content: end;
-    margin-right: 15px;
-}
-
-.skill-quote2 q{
-    color: #ffc107;
-    font-size: 40px;
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-}
-
-.skill-quote2 p{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 50px;
-}
-
-/* SECTION 3 (GALLERY) */
-#section-gallery{
-    height: 100vh;
-    padding: 70px;
-}
-
-.gallery h2{
-    text-align: center;
-}
-
-.gallery img{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    width: 825px;
-}
 
 /* SECTION 4 (CONTACT)*/
 #section-contact{
@@ -285,21 +193,21 @@ h1, h2, li, h3, p{
 fieldset{
     text-align: center;
     margin: auto;
-    border-color: #ffc107;
+    border-color: black;
     width: 1050px;
     border-style: double;
     border-width: 5px;
 }
 
 legend{
-    color: #ffc107;
+    color: black;
     font-size: 30px;
     text-align: left;
 }
 
 /* FOOTER */
 .main-footer{
-    background-color: #ffc107;
+    background-color: black;
     height: 60px;
     padding: 0px;
     margin: 0;
@@ -324,5 +232,3 @@ legend{
     border-radius: 5px;
     overflow: hidden;
 }
-
-/* MEDIA QUERY */
